@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fuzzy+Bubbles:wght@400;700&family=Poppins:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+body {
+    background-color: #f5f2ff;
+  }
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #f5f2ff; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    color: #000; }
+  
+.logo span {
+    color: #0004f5; 
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #0083ee; 
+  }
+  
+  .nav-btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  .contact-btn {
+    background-color: #0083ee;
+    color: #ffffff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .contact-btn:hover {
+    background-color: #0c3a5f;
+  }
+  
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/pic.jpg') no-repeat center center/cover;
+    filter: blur(3px);
+    z-index: -10; 
+}
+
+.hero h1, 
+.hero p, 
+.hero .button {
+    position: relative;
+    z-index: 1; 
+}
+
+
+.hero h1 {
+    font-size: 3rem;    
+}
+
+.hero p {
+    font-size: 1.2rem;
+
+}
+
+.home-1{
+    padding: 1rem;
+}
+
+.text{
+    font-size: 5rem;
+}
+
+.button {
+    background: #f4a261;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background: #e76f51;
+}
+
+/* About Section */
+#about {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #5285e4, #4680b3);
+    text-align: center;
+}
+
+#about img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+}
+
+.container h2{
+    color: white;
+    margin-top: 2rem;
+}
+.container p{
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Menu Section */
+#menu {
+    background: #0004f5;
+    padding: 2rem 1rem;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.menu-items {
+    display: flex; /* Mengatur layout sejajar horizontal */
+    justify-content: center; /* Memusatkan elemen di tengah */
+    align-items: flex-start; /* Sejajar di bagian atas */
+    gap: 2rem; /* Jarak antar kartu menu */
+    margin-top: 1rem;
+}
+
+.menu-item {
+    width: 250px;
+    background: #3261e0; 
+    color: white;
+    text-align: center;
+    padding: 1rem; 
+    border-radius: 8px;
+   
+}
+
+.menu-item img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.menu-item h3 {
+    margin: 1rem 0 0.5rem; 
+    font-size: 1.2rem;
+}
+
+.menu-item p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+
+.menu-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #6b4f4f;
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: #2a77cf;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+
+    margin-top: 2em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 0.8rem;
+    background: #0b31db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background: #152b91;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #040336;
+    color: #fff;
+}
